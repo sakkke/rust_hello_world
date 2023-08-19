@@ -21,7 +21,3 @@ jobs:
         uses: sakkke/rustreleaser-action@v14
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup tmate session
-        if: ${{ failure() }}
-        uses: mxschmitt/action-tmate@v3
